@@ -271,3 +271,92 @@ Processing by TradelinesController#show as HTML
   [1m[36mTradeline Load (0.0ms)[0m  [1m[34mSELECT "tradelines".* FROM "tradelines" WHERE "tradelines"."id" = ? LIMIT ?[0m  [["id", 1000], ["LIMIT", 1]]
 Completed 404 Not Found in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms | Allocations: 225)
   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by Api::V1::TradelinesController#index as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 5186)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTradeline Create (0.4ms)[0m  [1m[32mINSERT INTO "tradelines" ("name", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Some Credit Card"], ["amount", 3223.54], ["created_at", "2024-03-27 22:26:14.872723"], ["updated_at", "2024-03-27 22:26:14.872723"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::TradelinesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 742)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by Api::V1::TradelinesController#show as HTML
+  Parameters: {"id"=>"1000"}
+Completed 404 Not Found in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms | Allocations: 115)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by Api::V1::TradelinesController#index as HTML
+  [1m[36mTradeline Load (0.1ms)[0m  [1m[34mSELECT "tradelines".* FROM "tradelines"[0m
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 5605)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTradeline Create (0.4ms)[0m  [1m[32mINSERT INTO "tradelines" ("name", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Some Credit Card"], ["amount", 3223.54], ["created_at", "2024-03-27 22:27:34.810839"], ["updated_at", "2024-03-27 22:27:34.810839"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::TradelinesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 404 Not Found in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 672)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by Api::V1::TradelinesController#show as HTML
+  Parameters: {"id"=>"1000"}
+Completed 404 Not Found in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms | Allocations: 115)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by Api::V1::TradelinesController#index as HTML
+Completed 404 Not Found in 7ms (ActiveRecord: 0.0ms | Allocations: 5945)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTradeline Create (0.4ms)[0m  [1m[32mINSERT INTO "tradelines" ("name", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Some Credit Card"], ["amount", 3223.54], ["created_at", "2024-03-27 22:28:41.420504"], ["updated_at", "2024-03-27 22:28:41.420504"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::TradelinesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 404 Not Found in 0ms (ActiveRecord: 0.0ms | Allocations: 160)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by Api::V1::TradelinesController#show as HTML
+  Parameters: {"id"=>"1000"}
+Completed 404 Not Found in 0ms (ActiveRecord: 0.0ms | Allocations: 163)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by Api::V1::TradelinesController#index as HTML
+  [1m[36mTradeline Load (0.1ms)[0m  [1m[34mSELECT "tradelines".* FROM "tradelines"[0m
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 5606)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTradeline Create (0.4ms)[0m  [1m[32mINSERT INTO "tradelines" ("name", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Some Credit Card"], ["amount", 3223.54], ["created_at", "2024-03-27 22:29:38.044181"], ["updated_at", "2024-03-27 22:29:38.044181"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::TradelinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTradeline Load (0.0ms)[0m  [1m[34mSELECT "tradelines".* FROM "tradelines" WHERE "tradelines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDeposit Load (0.0ms)[0m  [1m[34mSELECT "deposits".* FROM "deposits" WHERE "deposits"."tradeline_id" = ?[0m  [["tradeline_id", 1]]
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 7821)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by Api::V1::TradelinesController#show as HTML
+  Parameters: {"id"=>"1000"}
+  [1m[36mTradeline Load (0.0ms)[0m  [1m[34mSELECT "tradelines".* FROM "tradelines" WHERE "tradelines"."id" = ? LIMIT ?[0m  [["id", 1000], ["LIMIT", 1]]
+Completed 404 Not Found in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms | Allocations: 228)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
