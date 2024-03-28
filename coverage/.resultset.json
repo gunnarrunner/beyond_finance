@@ -1,29 +1,32 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/gunnarrunkle/self_projects/beyond_finance/deposits_exercise/app/controllers/api/v1/tradelines_controller.rb": {
+      "/Users/gunnarrunkle/self_projects/beyond_finance/deposits_exercise/app/controllers/api/v1/deposits_controller.rb": {
         "lines": [
           1,
           1,
           1,
+          null,
+          1,
+          2,
+          null,
+          2,
           1,
           null,
           1,
-          1,
           null,
-          null,
-          1,
-          1,
           null,
           null,
           1,
           null,
           1,
-          1,
+          0,
           null,
           null,
           1,
-          1,
+          2,
+          null,
+          0,
           null,
           null,
           1,
@@ -38,6 +41,37 @@
           null
         ]
       },
+      "/Users/gunnarrunkle/self_projects/beyond_finance/deposits_exercise/app/controllers/api/v1/tradelines_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/gunnarrunkle/self_projects/beyond_finance/deposits_exercise/app/models/tradeline.rb": {
         "lines": [
           1,
@@ -47,8 +81,8 @@
           1,
           null,
           1,
-          0,
-          0,
+          187,
+          187,
           null,
           null
         ]
@@ -69,12 +103,32 @@
           1,
           null,
           1,
-          0,
+          4,
           null,
+          null
+        ]
+      },
+      "/Users/gunnarrunkle/self_projects/beyond_finance/deposits_exercise/app/serializers/deposit_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/gunnarrunkle/self_projects/beyond_finance/deposits_exercise/app/serializers/tradeline_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1711578578
+    "timestamp": 1711592939
   }
 }
